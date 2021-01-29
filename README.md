@@ -1,5 +1,5 @@
 # Matrix notifiers
-Simple Matrix notifiers (message and call). Use plain (no-e2e) events. Require python 3 with requests, urllib3, markdown, beautifulsoup4 modules.
+Simple Matrix notifiers (message and call) for Zabbix and Grafana. Use plain (no-e2e) events. Require python 3 with requests, urllib3, markdown, beautifulsoup4 modules.
 
 ## Zabbix
 Zabbix notifiers. `zabbix-matrix-call.py` doesn't honor message text (third arg) and skips alerts with the subject starting with `OK`.
@@ -53,7 +53,7 @@ sudo ./grafana2matrix-install.sh
 ```
 Modify `URL`, `TOKEN` variables using your matrix-synapse server url and user's access_token string. Set `AUTH` to random secret ASCII string. Modify `BIND` and `PORT` if you need this.
 
-Enable and start daemon:
+Enable and start the daemon:
 ```
 systemct enable --now grafana2matrix
 ```
