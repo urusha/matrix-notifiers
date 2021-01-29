@@ -1,0 +1,12 @@
+[Unit]
+After=network.target
+
+[Service]
+Type=simple
+User=grafana
+ExecStart=/opt/grafana2matrix/grafana2matrix.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
